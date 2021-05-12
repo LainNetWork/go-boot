@@ -72,7 +72,13 @@ func (ctx *AppContext) Init() {
 }
 
 func (ctx *AppContext) prepare() {
-
+	//args := os.Args
+	//valueMap := make(map[string]string)
+	//for _,arg := range args{
+	//	if strings.HasPrefix(arg,"-") && strings.Contains(arg,"="){
+	//		strings.SplitN()
+	//	}
+	//}
 }
 
 func (ctx *AppContext) configLog() {
