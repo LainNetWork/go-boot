@@ -1,0 +1,11 @@
+boot:
+  active: dev
+  log:
+    compress: true
+    filename: boot
+    level: info
+    maxage: 30
+    maxbackups: 3
+    maxsize: 10
+    path: .
+    savetype: text
