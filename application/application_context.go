@@ -72,6 +72,9 @@ func (ctx *AppContext) Init() {
 }
 
 func (ctx *AppContext) prepare() {
+	//解析输入参数
+	//反射处理注册的配置对象
+
 	//args := os.Args
 	//valueMap := make(map[string]string)
 	//for _,arg := range args{
@@ -103,14 +106,6 @@ func (ctx *AppContext) configLog() {
 		MaxAge:     logConfig.MaxAge,   //days
 		Compress:   logConfig.Compress, // disabled by default
 	}, os.Stdout))
-}
-
-type PrintHook struct {
-}
-
-func (hook PrintHook) Levels() []log.Level {
-
-	return log.AllLevels
 }
 
 const defaultConfigKey = "default"
